@@ -1,0 +1,1140 @@
+{
+ "seed": 7,
+ "packs": [
+  {
+   "pack": "D01",
+   "clean": false,
+   "findings": [
+    {
+     "id": "D01-F01",
+     "tier": 1,
+     "material": true,
+     "type": "M02",
+     "locs": [
+      [
+       "SA",
+       "S1.T"
+      ]
+     ],
+     "desc": "Schedule 1 total shown as \u00a31,847,756.00 but the lines sum to \u00a31,845,956.00.",
+     "keywords": [
+      "total",
+      "sum",
+      "add",
+      "arithmetic"
+     ]
+    },
+    {
+     "id": "D01-F02",
+     "tier": 2,
+     "material": false,
+     "type": "M05",
+     "locs": [
+      [
+       "SA",
+       "4.2"
+      ]
+     ],
+     "desc": "Clause 4.2 refers to a clause number that does not exist in the Agreement.",
+     "keywords": [
+      "clause",
+      "cross",
+      "reference",
+      "exist"
+     ]
+    },
+    {
+     "id": "D01-F03",
+     "tier": 3,
+     "material": true,
+     "type": "M11",
+     "locs": [
+      [
+       "PO",
+       "L.7"
+      ],
+      [
+       "SA",
+       "S1.7"
+      ]
+     ],
+     "desc": "PO line 7 unit price \u00a33,369.12 differs from Agreement price \u00a32,929.67.",
+     "keywords": [
+      "price",
+      "rate",
+      "unit"
+     ]
+    },
+    {
+     "id": "D01-F04",
+     "tier": 2,
+     "material": true,
+     "type": "M21",
+     "locs": [
+      [
+       "CERT",
+       "CT.1"
+      ],
+      [
+       "CERT",
+       "CT.2"
+      ]
+     ],
+     "desc": "Test date 21 August 2026 is after gauge calibration expiry 26 July 2026.",
+     "keywords": [
+      "calibrat",
+      "expir"
+     ]
+    },
+    {
+     "id": "D01-F05",
+     "tier": 3,
+     "material": true,
+     "type": "M22",
+     "locs": [
+      [
+       "CERT",
+       "C.2"
+      ],
+      [
+       "SA",
+       "S2.2"
+      ]
+     ],
+     "desc": "Certificate line 2 test pressure 20 bar is below the required 29 bar.",
+     "keywords": [
+      "pressure",
+      "bar",
+      "test"
+     ]
+    },
+    {
+     "id": "D01-F06",
+     "tier": 4,
+     "material": true,
+     "type": "M27",
+     "locs": [
+      [
+       "SA",
+       "3.2"
+      ],
+      [
+       "SA",
+       "A.AR"
+      ]
+     ],
+     "desc": "Annex A contains an automatic-renewal clause that contradicts clause 3.2 (no automatic renewal).",
+     "keywords": [
+      "renew",
+      "auto",
+      "term"
+     ]
+    },
+    {
+     "id": "D01-F07",
+     "tier": 4,
+     "material": true,
+     "type": "M46",
+     "locs": [
+      [
+       "SA",
+       "S6.84"
+      ]
+     ],
+     "desc": "Schedule 6 line 84: value \u00a36,649.10 but 11 x \u00a3503.72 = \u00a35,540.92.",
+     "keywords": [
+      "value",
+      "total",
+      "calculat",
+      "arithmetic",
+      "multipl"
+     ]
+    }
+   ],
+   "decoys": [
+    {
+     "did": "D1",
+     "locs": [
+      [
+       "VO",
+       "VO.1"
+      ],
+      [
+       "VO",
+       "VO.2"
+      ],
+      [
+       "VO",
+       "VO.3"
+      ]
+     ],
+     "desc": "Variation increases the PO quantity within the Maximum Quantity with correct arithmetic and authority."
+    },
+    {
+     "did": "D7",
+     "locs": [
+      [
+       "SA",
+       "10.1"
+      ],
+      [
+       "SA",
+       "S3.4"
+      ]
+     ],
+     "desc": "High liability cap, stated consistently."
+    }
+   ]
+  },
+  {
+   "pack": "D02",
+   "clean": false,
+   "findings": [
+    {
+     "id": "D02-F01",
+     "tier": 1,
+     "material": true,
+     "type": "M02",
+     "locs": [
+      [
+       "SA",
+       "S1.T"
+      ]
+     ],
+     "desc": "Schedule 1 total shown as \u00a38,627,758.80 but the lines sum to \u00a38,615,758.80.",
+     "keywords": [
+      "total",
+      "sum",
+      "add",
+      "arithmetic"
+     ]
+    },
+    {
+     "id": "D02-F02",
+     "tier": 2,
+     "material": true,
+     "type": "M06",
+     "locs": [
+      [
+       "SA",
+       "6.1"
+      ],
+      [
+       "SA",
+       "S3.1"
+      ]
+     ],
+     "desc": "Payment terms conflict: clause 6.1 says 30 days, Schedule 3 says 45 days.",
+     "keywords": [
+      "payment",
+      "days"
+     ]
+    },
+    {
+     "id": "D02-F03",
+     "tier": 3,
+     "material": true,
+     "type": "M17",
+     "locs": [
+      [
+       "PO",
+       "PT.2"
+      ],
+      [
+       "SA",
+       "6.1"
+      ]
+     ],
+     "desc": "PO payment terms 90 days differ from the Agreement's 30 days.",
+     "keywords": [
+      "payment",
+      "days"
+     ]
+    },
+    {
+     "id": "D02-F04",
+     "tier": 3,
+     "material": true,
+     "type": "M19",
+     "locs": [
+      [
+       "CERT",
+       "C.5"
+      ],
+      [
+       "SA",
+       "S2.5"
+      ]
+     ],
+     "desc": "Certificate line 5 reports material ASTM A105 but Schedule 2 requires ASTM A350 LF2.",
+     "keywords": [
+      "material",
+      "grade",
+      "astm"
+     ]
+    },
+    {
+     "id": "D02-F05",
+     "tier": 4,
+     "material": true,
+     "type": "M26",
+     "locs": [
+      [
+       "SA",
+       "S4.2"
+      ],
+      [
+       "SA",
+       "7.2"
+      ]
+     ],
+     "desc": "Schedule 4 downgrades the shell hydrostatic test to Review, but clause 7.2 makes it a hold point.",
+     "keywords": [
+      "hold",
+      "witness",
+      "review",
+      "hydro"
+     ]
+    },
+    {
+     "id": "D02-F06",
+     "tier": 4,
+     "material": true,
+     "type": "M27",
+     "locs": [
+      [
+       "SA",
+       "3.2"
+      ],
+      [
+       "SA",
+       "A.AR"
+      ]
+     ],
+     "desc": "Annex A contains an automatic-renewal clause that contradicts clause 3.2 (no automatic renewal).",
+     "keywords": [
+      "renew",
+      "auto",
+      "term"
+     ]
+    },
+    {
+     "id": "D02-F07",
+     "tier": 4,
+     "material": true,
+     "type": "M47",
+     "locs": [
+      [
+       "SA",
+       "S7.80"
+      ],
+      [
+       "SA",
+       "S3.6"
+      ]
+     ],
+     "desc": "Last delivery milestone in Schedule 7 falls after the Long-Stop Delivery Date in Schedule 3.",
+     "keywords": [
+      "milestone",
+      "long-stop",
+      "long stop",
+      "after",
+      "delivery"
+     ]
+    }
+   ],
+   "decoys": [
+    {
+     "did": "D1",
+     "locs": [
+      [
+       "VO",
+       "VO.1"
+      ],
+      [
+       "VO",
+       "VO.2"
+      ],
+      [
+       "VO",
+       "VO.3"
+      ]
+     ],
+     "desc": "Variation increases the PO quantity within the Maximum Quantity with correct arithmetic and authority."
+    },
+    {
+     "did": "D4",
+     "locs": [
+      [
+       "CERT",
+       "C.7"
+      ]
+     ],
+     "desc": "Certificate releases fewer than ordered, with an explicit partial-release note."
+    },
+    {
+     "did": "D6",
+     "locs": [
+      [
+       "CERT",
+       "CT.1"
+      ],
+      [
+       "CERT",
+       "CT.2"
+      ]
+     ],
+     "desc": "Calibration expires on the test date; still valid on that day."
+    },
+    {
+     "did": "D7",
+     "locs": [
+      [
+       "SA",
+       "10.1"
+      ],
+      [
+       "SA",
+       "S3.4"
+      ]
+     ],
+     "desc": "High liability cap, stated consistently."
+    }
+   ]
+  },
+  {
+   "pack": "D03",
+   "clean": true,
+   "findings": [],
+   "decoys": [
+    {
+     "did": "D2",
+     "locs": [
+      [
+       "SA",
+       "29.1"
+      ],
+      [
+       "SA",
+       "S3.5"
+      ],
+      [
+       "PO",
+       "PT.1"
+      ]
+     ],
+     "desc": "Singapore law is unusual for this buyer but is used consistently."
+    },
+    {
+     "did": "D3",
+     "locs": [
+      [
+       "PO",
+       "PO.H"
+      ]
+     ],
+     "desc": "PO date written numerically; same date as stated elsewhere."
+    },
+    {
+     "did": "D4",
+     "locs": [
+      [
+       "CERT",
+       "C.3"
+      ]
+     ],
+     "desc": "Certificate releases fewer than ordered, with an explicit partial-release note."
+    },
+    {
+     "did": "D7",
+     "locs": [
+      [
+       "SA",
+       "10.1"
+      ],
+      [
+       "SA",
+       "S3.4"
+      ]
+     ],
+     "desc": "High liability cap, stated consistently."
+    }
+   ]
+  },
+  {
+   "pack": "D04",
+   "clean": false,
+   "findings": [
+    {
+     "id": "D04-F01",
+     "tier": 1,
+     "material": true,
+     "type": "M03",
+     "locs": [
+      [
+       "SA",
+       "SIG.S"
+      ]
+     ],
+     "desc": "Supplier signature block on the Supply Agreement is blank; agreement is unsigned by the Supplier.",
+     "keywords": [
+      "sign",
+      "unsigned",
+      "execut",
+      "blank"
+     ]
+    },
+    {
+     "id": "D04-F02",
+     "tier": 3,
+     "material": true,
+     "type": "M12",
+     "locs": [
+      [
+       "PO",
+       "L.2"
+      ],
+      [
+       "SA",
+       "S1.2"
+      ]
+     ],
+     "desc": "PO line 2 quantity 89 exceeds the Maximum Quantity 80 in Schedule 1.",
+     "keywords": [
+      "quantity",
+      "qty",
+      "maximum",
+      "exceed"
+     ]
+    },
+    {
+     "id": "D04-F03",
+     "tier": 3,
+     "material": true,
+     "type": "M22",
+     "locs": [
+      [
+       "CERT",
+       "C.1"
+      ],
+      [
+       "SA",
+       "S2.1"
+      ]
+     ],
+     "desc": "Certificate line 1 test pressure 20 bar is below the required 29 bar.",
+     "keywords": [
+      "pressure",
+      "bar",
+      "test"
+     ]
+    },
+    {
+     "id": "D04-F04",
+     "tier": 4,
+     "material": true,
+     "type": "M27",
+     "locs": [
+      [
+       "SA",
+       "3.2"
+      ],
+      [
+       "SA",
+       "A.AR"
+      ]
+     ],
+     "desc": "Annex A contains an automatic-renewal clause that contradicts clause 3.2 (no automatic renewal).",
+     "keywords": [
+      "renew",
+      "auto",
+      "term"
+     ]
+    },
+    {
+     "id": "D04-F05",
+     "tier": 4,
+     "material": true,
+     "type": "M28",
+     "locs": [
+      [
+       "PO",
+       "PT.3"
+      ],
+      [
+       "SA",
+       "5.2"
+      ]
+     ],
+     "desc": "PO delivery date allows 8 weeks; clause 5.2 requires at least 12.",
+     "keywords": [
+      "lead",
+      "delivery",
+      "weeks",
+      "minimum"
+     ]
+    },
+    {
+     "id": "D04-F06",
+     "tier": 3,
+     "material": true,
+     "type": "M32",
+     "locs": [
+      [
+       "PO",
+       "PT.4"
+      ],
+      [
+       "SA",
+       "S2.H"
+      ]
+     ],
+     "desc": "PO cites specification Rev D; Schedule 2 is Rev B.",
+     "keywords": [
+      "rev",
+      "revision",
+      "specification"
+     ]
+    },
+    {
+     "id": "D04-F07",
+     "tier": 2,
+     "material": false,
+     "type": "M34",
+     "locs": [
+      [
+       "SA",
+       "7.1"
+      ],
+      [
+       "SA",
+       "S4.H"
+      ]
+     ],
+     "desc": "Inspection notice conflict: clause 7.1 says 3 working days, Schedule 4 says 10.",
+     "keywords": [
+      "notice",
+      "working days"
+     ]
+    },
+    {
+     "id": "D04-F08",
+     "tier": 4,
+     "material": true,
+     "type": "M47",
+     "locs": [
+      [
+       "SA",
+       "S7.80"
+      ],
+      [
+       "SA",
+       "S3.6"
+      ]
+     ],
+     "desc": "Last delivery milestone in Schedule 7 falls after the Long-Stop Delivery Date in Schedule 3.",
+     "keywords": [
+      "milestone",
+      "long-stop",
+      "long stop",
+      "after",
+      "delivery"
+     ]
+    }
+   ],
+   "decoys": [
+    {
+     "did": "D1",
+     "locs": [
+      [
+       "VO",
+       "VO.1"
+      ],
+      [
+       "VO",
+       "VO.2"
+      ],
+      [
+       "VO",
+       "VO.3"
+      ]
+     ],
+     "desc": "Variation increases the PO quantity within the Maximum Quantity with correct arithmetic and authority."
+    },
+    {
+     "did": "D5",
+     "locs": [
+      [
+       "SA",
+       "S1.T"
+      ]
+     ],
+     "desc": "Schedule 1 total rounded to the nearest pound, as stated in a note."
+    },
+    {
+     "did": "D6",
+     "locs": [
+      [
+       "CERT",
+       "CT.1"
+      ],
+      [
+       "CERT",
+       "CT.2"
+      ]
+     ],
+     "desc": "Calibration expires on the test date; still valid on that day."
+    },
+    {
+     "did": "D7",
+     "locs": [
+      [
+       "SA",
+       "10.1"
+      ],
+      [
+       "SA",
+       "S3.4"
+      ]
+     ],
+     "desc": "High liability cap, stated consistently."
+    }
+   ]
+  },
+  {
+   "pack": "D05",
+   "clean": false,
+   "findings": [
+    {
+     "id": "D05-F01",
+     "tier": 2,
+     "material": true,
+     "type": "M07",
+     "locs": [
+      [
+       "SA",
+       "1.2"
+      ],
+      [
+       "SA",
+       "8.1"
+      ]
+     ],
+     "desc": "Warranty conflict: definition says 12 months, clause 8.1 says 36 months.",
+     "keywords": [
+      "warrant",
+      "month"
+     ]
+    },
+    {
+     "id": "D05-F02",
+     "tier": 2,
+     "material": true,
+     "type": "M10",
+     "locs": [
+      [
+       "SA",
+       "30.1"
+      ],
+      [
+       "SA",
+       "S3.5"
+      ]
+     ],
+     "desc": "Governing law conflict: clause says England and Wales, Schedule 3 says Singapore.",
+     "keywords": [
+      "governing",
+      "law",
+      "jurisdiction"
+     ]
+    },
+    {
+     "id": "D05-F03",
+     "tier": 3,
+     "material": true,
+     "type": "M18",
+     "locs": [
+      [
+       "CERT",
+       "C.H"
+      ],
+      [
+       "PO",
+       "PO.H"
+      ]
+     ],
+     "desc": "Certificate cites PO PO-451150 but the PO number is PO-451154.",
+     "keywords": [
+      "po",
+      "purchase order",
+      "reference",
+      "number"
+     ]
+    },
+    {
+     "id": "D05-F04",
+     "tier": 3,
+     "material": true,
+     "type": "M20",
+     "locs": [
+      [
+       "CERT",
+       "C.6"
+      ],
+      [
+       "PO",
+       "L.6"
+      ]
+     ],
+     "desc": "Certificate line 6 releases 108 but 112 were ordered; no partial-release note.",
+     "keywords": [
+      "quantity",
+      "qty",
+      "short",
+      "balance",
+      "partial"
+     ]
+    },
+    {
+     "id": "D05-F05",
+     "tier": 1,
+     "material": true,
+     "type": "M24",
+     "locs": [
+      [
+       "VO",
+       "VO.3"
+      ]
+     ],
+     "desc": "VO revised PO total does not equal the PO total plus the stated increase.",
+     "keywords": [
+      "total",
+      "sum",
+      "arithmetic",
+      "calculat"
+     ]
+    },
+    {
+     "id": "D05-F06",
+     "tier": 4,
+     "material": true,
+     "type": "M41",
+     "locs": [
+      [
+       "MTC",
+       "M.4.1"
+      ],
+      [
+       "CERT",
+       "C.4"
+      ]
+     ],
+     "desc": "Heat number H148333 on the material certificate differs from H346541 on the release certificate (item 4).",
+     "keywords": [
+      "heat",
+      "number",
+      "traceab"
+     ]
+    },
+    {
+     "id": "D05-F07",
+     "tier": 4,
+     "material": true,
+     "type": "M42",
+     "locs": [
+      [
+       "MTC",
+       "M.3.3"
+      ],
+      [
+       "TS",
+       "TS.Y5"
+      ]
+     ],
+     "desc": "Yield strength 181 MPa for item 3 is below the 205 MPa minimum for ASTM A351 CF8M in the Technical Specification.",
+     "keywords": [
+      "yield",
+      "minimum",
+      "below",
+      "strength"
+     ]
+    },
+    {
+     "id": "D05-F08",
+     "tier": 4,
+     "material": true,
+     "type": "M44",
+     "locs": [
+      [
+       "TS",
+       "TS.HP"
+      ],
+      [
+       "SA",
+       "7.2"
+      ]
+     ],
+     "desc": "Technical Specification calls the shell hydrostatic test a witness point; clause 7.2 makes it a hold point.",
+     "keywords": [
+      "hold",
+      "witness",
+      "hydro"
+     ]
+    }
+   ],
+   "decoys": [
+    {
+     "did": "D3",
+     "locs": [
+      [
+       "PO",
+       "PO.H"
+      ]
+     ],
+     "desc": "PO date written numerically; same date as stated elsewhere."
+    },
+    {
+     "did": "D6",
+     "locs": [
+      [
+       "CERT",
+       "CT.1"
+      ],
+      [
+       "CERT",
+       "CT.2"
+      ]
+     ],
+     "desc": "Calibration expires on the test date; still valid on that day."
+    }
+   ]
+  },
+  {
+   "pack": "D06",
+   "clean": false,
+   "findings": [
+    {
+     "id": "D06-F01",
+     "tier": 1,
+     "material": true,
+     "type": "M03",
+     "locs": [
+      [
+       "SA",
+       "SIG.S"
+      ]
+     ],
+     "desc": "Supplier signature block on the Supply Agreement is blank; agreement is unsigned by the Supplier.",
+     "keywords": [
+      "sign",
+      "unsigned",
+      "execut",
+      "blank"
+     ]
+    },
+    {
+     "id": "D06-F02",
+     "tier": 2,
+     "material": true,
+     "type": "M10",
+     "locs": [
+      [
+       "SA",
+       "30.1"
+      ],
+      [
+       "SA",
+       "S3.5"
+      ]
+     ],
+     "desc": "Governing law conflict: clause says England and Wales, Schedule 3 says Scotland.",
+     "keywords": [
+      "governing",
+      "law",
+      "jurisdiction"
+     ]
+    },
+    {
+     "id": "D06-F03",
+     "tier": 3,
+     "material": false,
+     "type": "M15",
+     "locs": [
+      [
+       "PO",
+       "PO.H"
+      ],
+      [
+       "SA",
+       "SA.H"
+      ]
+     ],
+     "desc": "PO cites Agreement No. SA-2026-1824 but the Agreement number is SA-2026-1826.",
+     "keywords": [
+      "agreement",
+      "reference",
+      "number",
+      "ref"
+     ]
+    },
+    {
+     "id": "D06-F04",
+     "tier": 3,
+     "material": true,
+     "type": "M18",
+     "locs": [
+      [
+       "CERT",
+       "C.H"
+      ],
+      [
+       "PO",
+       "PO.H"
+      ]
+     ],
+     "desc": "Certificate cites PO PO-457948 but the PO number is PO-457947.",
+     "keywords": [
+      "po",
+      "purchase order",
+      "reference",
+      "number"
+     ]
+    },
+    {
+     "id": "D06-F05",
+     "tier": 3,
+     "material": true,
+     "type": "M20",
+     "locs": [
+      [
+       "CERT",
+       "C.2"
+      ],
+      [
+       "PO",
+       "L.2"
+      ]
+     ],
+     "desc": "Certificate line 2 releases 53 but 60 were ordered; no partial-release note.",
+     "keywords": [
+      "quantity",
+      "qty",
+      "short",
+      "balance",
+      "partial"
+     ]
+    },
+    {
+     "id": "D06-F06",
+     "tier": 4,
+     "material": true,
+     "type": "M27",
+     "locs": [
+      [
+       "SA",
+       "3.2"
+      ],
+      [
+       "SA",
+       "A.AR"
+      ]
+     ],
+     "desc": "Annex A contains an automatic-renewal clause that contradicts clause 3.2 (no automatic renewal).",
+     "keywords": [
+      "renew",
+      "auto",
+      "term"
+     ]
+    },
+    {
+     "id": "D06-F07",
+     "tier": 2,
+     "material": false,
+     "type": "M30",
+     "locs": [
+      [
+       "SA",
+       "4.2"
+      ],
+      [
+       "SA",
+       "1.1"
+      ]
+     ],
+     "desc": "Clause 4.2 uses the undefined term 'Total Price'; the defined term is 'Contract Price'.",
+     "keywords": [
+      "defin",
+      "term",
+      "contract price",
+      "total price"
+     ]
+    },
+    {
+     "id": "D06-F08",
+     "tier": 4,
+     "material": true,
+     "type": "M46",
+     "locs": [
+      [
+       "SA",
+       "S6.106"
+      ]
+     ],
+     "desc": "Schedule 6 line 106: value \u00a31,881.00 but 19 x \u00a390.00 = \u00a31,710.00.",
+     "keywords": [
+      "value",
+      "total",
+      "calculat",
+      "arithmetic",
+      "multipl"
+     ]
+    }
+   ],
+   "decoys": [
+    {
+     "did": "D1",
+     "locs": [
+      [
+       "VO",
+       "VO.1"
+      ],
+      [
+       "VO",
+       "VO.2"
+      ],
+      [
+       "VO",
+       "VO.3"
+      ]
+     ],
+     "desc": "Variation increases the PO quantity within the Maximum Quantity with correct arithmetic and authority."
+    },
+    {
+     "did": "D5",
+     "locs": [
+      [
+       "SA",
+       "S1.T"
+      ]
+     ],
+     "desc": "Schedule 1 total rounded to the nearest pound, as stated in a note."
+    },
+    {
+     "did": "D7",
+     "locs": [
+      [
+       "SA",
+       "10.1"
+      ],
+      [
+       "SA",
+       "S3.4"
+      ]
+     ],
+     "desc": "High liability cap, stated consistently."
+    }
+   ]
+  }
+ ],
+ "note": "Fictional documents. Findings located by (doc, ref) as printed in the text."
+}
